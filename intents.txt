@@ -1,0 +1,185 @@
+intents = [
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "How are you", "What's up"],
+        "responses": ["Hi there", "Hello", "Hey", "Hi. I'm fine, thank you", "Nothing much"]
+    },
+    {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Take care"],
+        "responses": ["Goodbye", "See you later", "Take care"]
+    },
+    {
+        "tag": "thanks",
+        "patterns": ["Thank you", "Thanks", "Thanks a lot", "I appreciate it"],
+        "responses": ["You're welcome", "No problem", "Glad I could help"]
+    },
+    {
+        "tag": "about",
+        "patterns": ["What can you do", "Who are you", "What are you", "What is your purpose", "Tell me about the company"],
+        "responses": ["I am a chatbot", "My purpose is to assist you", "I can answer questions and provide assistance","Company was established in 1980s"]
+    },
+    {
+        "tag": "help",
+        "patterns": ["Help", "I need help", "Can you help me", "What should I do"],
+        "responses": ["Sure, what do you need help with?", "I'm here to help. What's the problem?", "How can I assist you?"]
+    },
+    {
+        "tag": "age",
+        "patterns": ["How old are you", "What's your age"],
+        "responses": ["I don't have an age. I'm a chatbot.", "I was just born in the digital world.", "Age is just a number for me."]
+    },
+    {
+        "tag": "weather",
+        "patterns": ["What's the weather like", "How's the weather today"],
+        "responses": ["I'm sorry, I cannot provide real-time weather information.", "You can check the weather on a weather app or website."]
+    },
+    {
+        "tag": "budget",
+        "patterns": ["How can I make a budget", "What's a good budgeting strategy", "How do I create a budget"],
+        "responses": ["To make a budget, start by tracking your income and expenses. Then, allocate your income towards essential expenses like rent, food, and bills. Next, allocate some of your income towards savings and debt repayment. Finally, allocate the remainder of your income towards discretionary expenses like entertainment and hobbies.", "A good budgeting strategy is to use the 50/30/20 rule. This means allocating 50% of your income towards essential expenses, 30% towards discretionary expenses, and 20% towards savings and debt repayment.", "To create a budget, start by setting financial goals for yourself. Then, track your income and expenses for a few months to get a sense of where your money is going. Next, create a budget by allocating your income towards essential expenses, savings and debt repayment, and discretionary expenses."]
+    },
+    {
+        "tag": "credit_score",
+        "patterns": ["What is a credit score", "How do I check my credit score", "How can I improve my credit score"],
+        "responses": ["A credit score is a number that represents your creditworthiness. It is based on your credit history and is used by lenders to determine whether or not to lend you money. The higher your credit score, the more likely you are to be approved for credit.", "You can check your credit score for free on several websites such as Credit Karma and Credit Sesame."]
+    },
+    {
+        "tag": "customer_care_number",
+        "patterns": ["Can you provide me with the customer care number","customer care","customer care number","Customer Care number"],
+        "responses": ["Sure! The customer care number is 9999999999"]
+    },
+    {
+        "tag": "complaint",
+        "patterns": ["I'm having trouble","I have a complaint","Complaint","complaint"],
+        "responses":["Try contacting the customer care at 9999999999","Sure please convey.","How may I assist you."]
+    },
+    {
+        "tag": "Account",
+        "patterns": ["How do I open a bank account?","What documents are required to open a bank account?","Documents required."],
+        "responses": ["You typically need to visit a bank branch with your ID, proof of address, and other documents.","You need ID, proof of address, and a social security number or tax ID.",""]
+    },
+    {
+        "tag":"Account Type",
+        "patterns":["What types of bank accounts are available?","What is the difference between a checking and savings account?"],
+        "responses":["Checking, savings, money market, CDs, and more.","Checking is for everyday transactions, savings is for saving money and earning interest."]
+    },
+
+    {
+        "tag":"Transaction",
+        "patterns": ["How do I deposit money into my bank account?"],
+        "responses":["Visit a bank branch, use an ATM, or transfer money from another account."]
+    },
+
+    {
+        "tag":"Statement",
+        "patterns": ["What is a bank statement and how do I access it?"],
+        "responses":["A record of account activity; you can access it online or by requesting a paper copy from your bank."]
+    },
+
+    {
+        "tag":"Transaction",
+        "patterns": ["How do I transfer money between bank accounts?"],
+        "responses":["Online banking, visiting a branch, or using a mobile app."]
+    },
+
+    {
+        "tag":"Transaction",
+        "patterns": ["How do I set up automatic bill payments?"],
+        "responses":["Provide your bank account information to the company and authorize automatic withdrawals."]
+    },
+
+    {
+        "tag":"Dispute",
+        "patterns": ["How do I dispute a charge on my bank account?"],
+        "responses":["Contact your bank and provide details and documentation; they will investigate and may issue a refund."]
+    },
+
+    {
+        "tag":"Loan/Credit Card",
+        "patterns": ["How do I apply for a loan or credit card?"],
+        "responses":["Provide personal information and apply online, by phone, or in person at a bank branch."]
+    },
+
+    {
+        "tag":"Transaction",
+        "patterns": ["How do I make deposits or withdrawals from my account?"],
+        "responses":["Visit a bank branch, use an ATM, or transfer funds online or through a mobile app."]
+    },
+
+    {
+        "tag":"Security",
+        "patterns": ["How do I report a lost or stolen debit card?"],
+        "responses":["Contact customer service immediately to report the card as lost or stolen and to order a replacement."]
+    },
+
+    {
+        "tag":"Security",
+        "patterns": ["How do I protect my account from fraud and unauthorized access?"],
+        "responses":["Use strong passwords, enable two-factor authentication, monitor account activity regularly, and report any suspicious activity to customer service immediately."]
+    },
+
+    {
+        "tag":"Loan/Credit Card",
+        "patterns": ["How do I make payments on my loan or credit card?"],
+        "responses":["Set up automatic payments or make payments online, by phone, or by mail."]
+    },
+
+    {
+        "tag":"Credit",
+        "patterns": ["How do I dispute an error on my credit report?","Credit report"],
+        "responses":["Contact the credit bureau that issued the report and provide documentation to have the error investigated and corrected."]
+    },
+
+    {
+        "tag":"Security",
+        "patterns": ["How do I report suspected fraudulent activity on my account?","Security"],
+        "responses":["Contact customer service immediately to report the activity and have it investigated"]
+    },
+
+    {
+        "tag":"Account",
+        "patterns": ["How do I open a joint bank account with someone else?","Joint account","How to open joint account"],
+        "responses":["Visit a bank branch with the other account holder and bring necessary documentation, such as IDs and proof of address."]
+    },
+
+    {
+        "tag":"Account balance",
+        "patterns": ["What's my account balance?","Check account balance"],
+        "responses":["The chatbot can provide the current balance of the customer's account upon request."]
+    },
+
+    {
+        "tag":"Bill payment",
+        "patterns": ["Can I pay my bills through the chatbot?"],
+        "responses":["Yes, many banks offer bill payment services through their chatbots."]
+    },
+
+    {
+        "tag":"Credit card",
+        "patterns": ["Can I manage my credit card through the chatbot?"],
+        "responses":["Yes, many banks offer credit card management services through their chatbots, such as viewing statements, making payments, and setting up alerts."]
+    },
+    {
+        "tag":"Loan applications",
+        "patterns": ["Can I apply for a loan through the chatbot?"],
+        "responses":["Some banks may offer loan applications through their chatbots, while others may direct customers to their website or a loan officer."]
+    },
+
+    {
+        "tag":"Branch locations",
+        "patterns": ["Where is the nearest bank branch to me?"],
+        "responses":["The chatbot can provide the location and hours of operation of the nearest bank branch to the customer."]
+    },
+
+    {
+        "tag":"Feedback",
+        "patterns": ["Can I provide feedback on the chatbot?"],
+        "responses":["Yes, many banks welcome feedback on their chatbots and may provide a survey or feedback form for customers to share their thoughts."]
+    },
+    {
+        "tag":"Assistance",
+        "patterns": ["Can I speak to a human representative if I need additional assistance?"],
+        "responses":["Yes, many banks offer customer support through a chatbot as well as phone, email, or in-person assistance for more complex issues.","Sure! The customer care number is 9999999999"]
+    }
+]
